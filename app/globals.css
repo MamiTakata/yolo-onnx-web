@@ -1,0 +1,69 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #111;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  margin: 0 0 16px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #dfe3ea;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.controls {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #0b5fff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0049d1;
+}
+
+.resultCanvas {
+  width: 100%;
+  height: auto;
+  border: 1px solid #dfe3ea;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.error {
+  color: #d13438;
+  font-weight: 600;
+}
