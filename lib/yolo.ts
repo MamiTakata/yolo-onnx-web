@@ -28,7 +28,7 @@ export async function loadModel(modelPath: string): Promise<ort.InferenceSession
   ort.env.wasm.wasmPaths = "https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/";
   ort.env.wasm.numThreads = 1;
   return ort.InferenceSession.create(modelPath, {
-    executionProviders: ["wasm"],
+    executionProviders: ["webgpu", "wasm"],
     graphOptimizationLevel: "all",
   });
 }
